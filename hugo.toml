@@ -1,4 +1,4 @@
 baseURL = 'https://boxboy523.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ko-kr'
+title = '김준영의 블로그'
 theme = 'risotto'
