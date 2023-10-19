@@ -1,4 +1,107 @@
 baseURL = 'https://boxboy523.github.io/'
 languageCode = 'ko-kr'
-title = '김준영의 블로그'
+title = "Junyeong's Blog"
 theme = 'risotto'
+author = "Junyeong Kim"
+paginate = 3
+DefaultContentLanguage = "ko"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "Junyeong Kim"
+description = "컴퓨터과학과 학부생, INTP, 취미로 요리, 게임 기타등등 꽂히는 건 다 한다."
+logo = "images/bird.svg"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/boxboy523"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-instagram"
+title = "Email"
+url = "https://www.instagram.com/junyeong_523/"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:rlawnsdud523@yonsei.ac.kr"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-gamepad"
+title = "Steam"
+url = "https:steamcommunity.com/id/11boxboy11/"
+
+[menu]
+
+  	[[menu.main]]
+    	identifier = "about"
+    	name = "About"
+    	url = "/about/"
+    	weight = 10
+
+	[[menu.main]]
+		identifier = "coding"
+		name = "coding"
+		url = "/coding/"
+		weight = 10
+	
+	[[menu.main]]
+		identifier = "fooddrink"
+		name = "food & drink"
+		url = "/fooddrink/"
+		weight = 10
+
+	[[menu.main]]
+		identifier = "others"
+		name = "others"
+		url = "/others/"
+		weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
+
+[privacy]
+
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
