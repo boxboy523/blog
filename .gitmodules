@@ -1,0 +1,7 @@
+[submodule "themes/risotto"]
+	path = themes/risotto
+	url = https://github.com/boxboy523/risotto.git
+[submodule "public"]
+	path = public
+	url = git@github.com:boxboy523/boxboy523.github.io.git
+	branch = master
